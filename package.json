@@ -1,0 +1,16 @@
+{
+  "name": "svd-image-compression-project",
+  "version": "1.0.0",
+  "description": "A program allowing you to intuitively understand the applications of singular value decomposition to image compression, from files retrieved from either online or locally",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/svdImageCompression.js"
+  },
+  "keywords": [],
+  "author": "Theo Manev",
+  "license": "ISC",
+  "type": "commonjs"
+}

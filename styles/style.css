@@ -1,0 +1,76 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left:  10%;
+  padding-right: 10%;
+}
+
+#mainTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  width: 60%;
+  color: black;
+}
+
+#svdTheoryLink {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+#authorLabel {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: black;
+	padding-left: 15%;
+}
+
+#webpageTitle {
+	width: 60%;
+	text-align: left;
+	padding-left: 10%;
+}
+
+#authorSubtitle {
+	font-size: 1.5em;
+	width: 60%;
+	text-align: left;
+	padding-left: 15%;
+	user-select: none;
+}
+
+@media (max-width: 600px) {
+  #headerBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left:  5%;
+    padding-right: 5%;
+  }
+
+  #mainTitle, #svdTheoryLink {
+    font-size: 1.2em;
+  }
+
+  #svdTheoryLink {
+    margin-top: 0.5em;
+  }
+}
+
+#mainTitle,
+#svdTheoryLink {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#mainTitle:hover,
+#svdTheoryLink:hover {
+  transform: translateY(2px);
+  opacity: 0.6;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
